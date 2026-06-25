@@ -1,0 +1,9 @@
+<%- include('partials/header') %>
+<h1><%= title %></h1>
+<p>Ini Tugas Tantangan Praktikum M11</p>
+<ul>
+    <% data.forEach(mahasiswa => { %>
+        <li><%= mahasiswa.nim %>  <%= mahasiswa.nama%></li>
+    <% }); %>
+</ul>
+<%- include('partials/footer') %>
